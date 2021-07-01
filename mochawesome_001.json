@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-01T18:12:20.610Z",
+    "end": "2021-07-01T18:12:31.618Z",
+    "duration": 11008,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bc7f5e45-cfb2-4477-95ab-e50588166f45",
+      "title": "",
+      "fullFile": "cypress/integration/listagem.spec.js",
+      "file": "cypress/integration/listagem.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4b138f8-2dff-4afa-9208-0dfa671c9b89",
+          "title": "Listar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "4466bd16-f831-4edb-adfc-6467178e098f",
+              "title": "Listagem",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Listagem com apenas um registro",
+                  "fullTitle": "Listar Listagem Listagem com apenas um registro",
+                  "timedOut": null,
+                  "duration": 10908,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.server();\ncy.route({\n  method: 'GET',\n  url: '**/api/1/databases/userdetails/collections/newtable?**',\n  status: 200,\n  response: 'fx:webtable-get-unique'\n});\ncy.visit('/WebTable.html');",
+                  "err": {},
+                  "uuid": "5e05370d-a3eb-48a3-91fc-b846fc9a5403",
+                  "parentUUID": "4466bd16-f831-4edb-adfc-6467178e098f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "5e05370d-a3eb-48a3-91fc-b846fc9a5403"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 10908,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
